@@ -3,16 +3,24 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Mbsoft31\LaravelModelCategories\Models\Category;
 
 return new class extends Migration
 {
     public function up()
     {
-        Schema::create('laravel_model_categories_table', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
+            $table->string("slug");
+            $table->foreignId("parent_id")->nullable()->nullOnDelete();
+            $table->timestamps();
+        });
 
-            // add fields
-
+        Schema::create('category_model', function (Blueprint $table) {
+            $table->id();
+            $table->foreignIdFor(Category::class)->constrained();
+            $table->morphs("categorised");
             $table->timestamps();
         });
     }

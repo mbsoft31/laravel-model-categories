@@ -2,7 +2,6 @@
 
 namespace Mbsoft31\LaravelModelCategories;
 
-use Mbsoft31\LaravelModelCategories\Commands\LaravelModelCategoriesCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,9 +16,9 @@ class LaravelModelCategoriesServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-model-categories')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-model-categories_table')
-            ->hasCommand(LaravelModelCategoriesCommand::class);
+            ->hasMigration('create_laravel-model-categories_table');
+            // ->hasConfigFile()
+            // ->hasViews()
+            // ->hasCommand(LaravelModelCategoriesCommand::class);
     }
 }
