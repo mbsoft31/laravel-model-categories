@@ -4,8 +4,8 @@ namespace Mbsoft31\LaravelModelCategories\Tests\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Mbsoft31\LaravelModelCategories\Traits\HasCategories;
 use Mbsoft31\LaravelModelCategories\Tests\database\factories\ProductFactory;
+use Mbsoft31\LaravelModelCategories\Traits\HasCategories;
 
 /**
  * @method static create(array $inputs)

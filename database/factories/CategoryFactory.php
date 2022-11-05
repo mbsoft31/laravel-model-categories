@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use Mbsoft31\LaravelModelCategories\Models\Category;
 
-
 class CategoryFactory extends Factory
 {
     protected $model = Category::class;
@@ -15,11 +14,11 @@ class CategoryFactory extends Factory
     {
         $name = $this->faker->title;
         $slug = Str::slug($name);
+
         return [
-            "name"      => $name,
-            "slug"      => $slug,
-            "parent_id" => null,
+            'name' => $name,
+            'slug' => $slug,
+            'parent_id' => null,
         ];
     }
 }
-

@@ -17,8 +17,8 @@ class LaravelModelCategoriesServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-model-categories')
             ->hasMigration('create_laravel-model-categories_table');
-            // ->hasConfigFile()
-            // ->hasViews()
-            // ->hasCommand(LaravelModelCategoriesCommand::class);
+        // ->hasConfigFile()
+        // ->hasViews()
+        // ->hasCommand(LaravelModelCategoriesCommand::class);
     }
 }
