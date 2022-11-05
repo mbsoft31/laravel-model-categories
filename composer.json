@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "mbsoft31/laravel-model-categories",
+    "description": "This is my package laravel-model-categories",
     "keywords": [
-        ":vendor_name",
+        "mbsoft31",
         "laravel",
-        ":package_slug"
+        "laravel-model-categories"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/mbsoft31/laravel-model-categories",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Bekhouche Mouadh",
+            "email": "bekhouche.mouadh@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Mbsoft31\\LaravelModelCategories\\": "src",
+            "Mbsoft31\\LaravelModelCategories\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Mbsoft31\\LaravelModelCategories\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Mbsoft31\\LaravelModelCategories\\LaravelModelCategoriesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelModelCategories": "Mbsoft31\\LaravelModelCategories\\Facades\\LaravelModelCategories"
             }
         }
     },
